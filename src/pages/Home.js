@@ -9,13 +9,13 @@ import catbanner4 from "../assets/images/catbanner-01.jpg";
 import { TbTruckDelivery, TbShoppingCartDiscount } from "react-icons/tb";
 import { FaGifts, FaCcAmazonPay } from "react-icons/fa";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import Discount from '../components/Discount';
+
 
 
 function Home() {
   return (
     <div>
-      <section className='home-wrapper-1 py-5'>
+       <section className='home-wrapper-1 py-5'>
           <div className='row'>
             <div className='col-6'>
               <div className='main-banner position-relative p-3'>
@@ -111,8 +111,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className='featured-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
+      <section className='featured-wrapper ml-[10px] py-3 home-wrapper-2'>
+        <div className='container-fluid'>
           <div className='row'>
             <div className='col-12'>
               <h3 className='text-[26px] leading-[] font-medium mb-[30px]'>Colectie Noua</h3>
@@ -120,10 +120,42 @@ function Home() {
             <ProductCard />
             <ProductCard />
             <ProductCard />
+            <ProductCard /> 
+            
           </div>
         </div>
       </section>
-      <section className='discount-wrapper py-5 home-wrapper-2'>
+      <section className='famous-wrapper py-4 ml-[10px] home-wrapper-2 '>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className="col-4">
+              <div className='famous-card position-relative'>
+                <img src='https://images.ctfassets.net/wl6q2in9o7k3/40VyGZ3B2mgb2xObRqb5QF/c1317a357d2f443038cce6d72f20ea40/GY79807_SEO-AO-021_Shop-Womens-INTL_660x840.jpg?w=1920&q=90' alt='famous' className='img-fluide' />
+                <div className='famous-content position-absolute'>
+                <p>Shop Women</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-4">
+              <div className='famous-card position-relative '>
+                <img src='https://images.ctfassets.net/wl6q2in9o7k3/3tvaR1AOZjrjLOaljn6G1Y/db3f829d3b8b3df3f235e4dcff5a071e/accessories_shop_accessories_card.jpg?w=1920&q=90' alt='famous' className='img-fluide' />
+                <div className='famous-content position-absolute'>
+                <p>Shop Women</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-4">
+              <div className='famous-card position-relative'>
+                <img src='https://images.ctfassets.net/wl6q2in9o7k3/40VyGZ3B2mgb2xObRqb5QF/c1317a357d2f443038cce6d72f20ea40/GY79807_SEO-AO-021_Shop-Womens-INTL_660x840.jpg?w=1920&q=90' alt='famous' className='img-fluide' />
+                <div className='famous-content position-absolute'>
+                <p>Shop Men</p>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </div>
+      </section>
+      {/* <section className='discount-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-12'>
@@ -134,6 +166,51 @@ function Home() {
             <Discount />
             <Discount />
             <Discount />
+          </div>
+        </div>
+      </section> */}
+      <section className='popular-wrapper py-5 home-wrapper-2'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='text-[26px] leading-[] font-medium mb-[30px]'>Cele Mai Populare</h3>
+            </div>
+          </div>
+          <div className='row'>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className='famous-wrapper-2 py-4 ml-[10px] home-wrapper-2'>
+        <div className='container-fluid'>
+          <div className='row '>
+            <div className="col-4">
+              <div className='famous-card position-relative'>
+                <img src='https://images.ctfassets.net/wl6q2in9o7k3/40VyGZ3B2mgb2xObRqb5QF/c1317a357d2f443038cce6d72f20ea40/GY79807_SEO-AO-021_Shop-Womens-INTL_660x840.jpg?w=1920&q=90' alt='famous' className='img-fluide' />
+                <div className='famous-content position-absolute'>
+                <p>Shop Women</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-4">
+              <div className='famous-card position-relative '>
+                <img src='https://images.ctfassets.net/wl6q2in9o7k3/3tvaR1AOZjrjLOaljn6G1Y/db3f829d3b8b3df3f235e4dcff5a071e/accessories_shop_accessories_card.jpg?w=1920&q=90' alt='famous' className='img-fluide' />
+                <div className='famous-content position-absolute'>
+                <p>Shop Women</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-4">
+              <div className='famous-card position-relative'>
+                <img src='https://images.ctfassets.net/wl6q2in9o7k3/40VyGZ3B2mgb2xObRqb5QF/c1317a357d2f443038cce6d72f20ea40/GY79807_SEO-AO-021_Shop-Womens-INTL_660x840.jpg?w=1920&q=90' alt='famous' className='img-fluide' />
+                <div className='famous-content position-absolute'>
+                <p>Shop Men</p>
+                </div>
+              </div>
+            </div>         
           </div>
         </div>
       </section>
